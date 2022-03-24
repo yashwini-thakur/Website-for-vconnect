@@ -1,0 +1,73 @@
+body {
+  display: grid;
+  position: relative;
+  align-items: center;
+  background: url("../img/greybg.jpg") no-repeat center center/cover;
+}
+.display {
+  padding: 10%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "image" "text";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 2%;
+  background-color: rgb(255, 255, 250, 0.8);
+  box-sizing: content-box;
+  /* box-sizing: calc(319.92, 318.78); */
+}
+.card_image {
+  grid-area: image;
+  background: url("../img/greybg1.webp");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-size: cover;
+}
+.card_text {
+  grid-area: text;
+  margin: 5px;
+  background-color: rgb(255, 255, 255, 0.98);
+}
+
+.sem {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3%;
+}
+
+.sem span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: #111;
+  background: #fff;
+  place-items: center;
+  border: 1px solid rgb(51, 50, 50);
+}
+.sem span:active {
+  background: rgb(112, 241, 6);
+  color: #111;
+}
+
+.card_stats {
+  grid-area: stats;
+}
+.subject {
+  text-align: center;
+  color: #111;
+
+  font-size: 40px;
+}
